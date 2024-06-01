@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Management System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        div {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #e74c3c;
+        }
+</style>
+<body>
+    <div>
+        <h2>User Register</h2>
+    </div>
+<center>
+    <form action="register_servlet" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username">
+        <br><br>
+        <label for="mobno">Mobile.no:</label>
+        <input type="number" name="mobno">
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+        <br><br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password">
+        <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form
+</center>
+</body>
+</html>

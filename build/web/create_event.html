@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Event Management System</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        div {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+        form{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #e74c3c;
+        }
+    </style>
+    <body>
+        <div>
+            <h2>Create New Event</h2>
+        </div>
+        <form action="create_event.jsp">
+            <label for="event_name">Event Name:</label>
+            <input type="text" name="event_name"><br><br>
+            <label for="event_desc">Event Description:</label>
+            <input type="text" name="event_desc"><br><br>
+            <label for="event_date">Event Date:</label>
+            <input type="date" name="event_date"><br><br>
+            <label for="event_time">Event Time:</label>
+            <input type="text" name="event_time"><br><br>
+            <input type="submit" value="Create">
+            <input type="reset" value="Clear">
+        </form>  
+    </body>
+</html>

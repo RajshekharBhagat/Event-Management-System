@@ -1,0 +1,18 @@
+SMAP
+registerEvent_jsp.java
+JSP
+*S JSP
+*F
++ 0 registerEvent.jsp
+registerEvent.jsp
+*L
+5,60:46
+65,18:107
+82,11:125
+93,5:136,3
+98,4:151
+102,2:156
+103,3:158
+107,6:163
+112,4:169
+*E
